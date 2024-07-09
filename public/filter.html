@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+    <script src="https://kit.fontawesome.com/9feffce6d7.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+    <link rel="shortcut icon" href="Banner1.png" type="image/x-icon">
+    <link rel="stylesheet" href="filter.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class="links">
+          <ul>
+              <li  id="home_btn" ><i class="fa-solid fa-house"></i><span>Home</span></li>
+              <li><i class="fa-solid fa-calendar-days"></i> <span>Search</span></li>
+          </ul>
+      </div>
+    
+        <div class="image-title"><img src="Banner1.png" alt="">
+          <div class="title">
+            <p>रेलवे सुरक्षा बल</p>
+            <p>Railway Protection Force</p>
+         </div>
+        </div>
+        <div class=" hamburger" id="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+      </nav>
+
+      <div class="loading">
+        <dotlottie-player src="https://lottie.host/8717a81c-d44a-4142-8d98-87e21f08b3f3/hikcmHYqN1.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
+        <h3>Loading Please Wait...</h3>
+      </div>
+
+    <div class="filter-wrapper">
+        <form id="filterForm">
+            <div class="fields">
+
+                <div class="input-field">
+                  <label>Start Date</label>
+                  <input id="from-date" type="date" required>
+                </div>
+
+                    <div class="input-field">
+                      <label>End Date</label>
+                      <input id="to-date" type="date" required>
+                    </div>
+
+                    <div class="input-field">
+                        <label>Zone</label>
+                        <select id="zone"><option selected disabled>Select</option></select>
+                      </div>
+
+                    <button class="sumbit">
+                        <span class="btnText">Search</span>
+                        <i class="fas fa-navigator"></i>
+                    </button>
+              </div>
+            
+        </form>
+
+        
+
+        <!-- Table -->
+        <div class="table">
+            <h3 class="head">All Zones Daily Diary Register <span class="branch"></span></h3>
+            <div class="table-container">
+              <table class="table_body">
+                <thead>
+                  <tr>
+                    <th>GD Entry Number</th>
+                    <th>Entry Officer</th>
+                    <th>Zone</th>
+                    <th>Timestamp</th>
+                    <th>Details of Entry</th>
+                  </tr>
+                </thead>
+                <tbody id="table-body">
+                  <!-- Rows will be dynamically inserted here -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+    </div>
+
+      <!-- Footer -->
+      <footer>
+        <p>Designed & Developed by Centre for Railway Information Systems</p> 
+     </footer>
+     
+    <script src="filter.js"></script>
+</body>
+</html>

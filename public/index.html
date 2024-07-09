@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/9feffce6d7.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="Banner1.png" type="image/x-icon">
+    <title>RPF</title>
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+</head>
+<body>
+  <nav>
+    <div class="image-title"><img src="Banner1.png" alt="">
+      <div class="title">
+        <p>रेलवे सुरक्षा बल</p>
+        <p>Railway Protection Force</p>
+     </div>
+    <div></div>
+  </nav>
+<div class="loading">
+  <dotlottie-player src="https://lottie.host/8717a81c-d44a-4142-8d98-87e21f08b3f3/hikcmHYqN1.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
+  <h3>Loading Please Wait...</h3>
+</div>
+ 
+<div class="container login">
+    <div class="image"><img src="Banner1.png" alt=""></div>
+
+    <form autocomplete="off" novalidate id="loginForm">
+
+        <label class="error-label-login" id="email_pass_error"></label>
+            <!-- Username -->
+            <div class="input-box" id="email-div">
+                <label class="form-label">Username</label> 
+                <input id="username" type="text" autocomplete="off" required>
+              <span class="icon"><i class="fa-solid fa-user"></i></span>
+            </div>
+    
+            <!-- Password -->
+            <div class="input-box" id="password-div">
+                <label class="form-label">Password</label> 
+              <input id="password" type="password" autocomplete="off" required>
+              <span class="icon"><i class="fa-solid fa-lock"></i></span>
+            </div>
+
+            <!-- Captcha -->
+            <div class="input-box" id="captcha-div">
+                <label class="form-label">Captcha</label> 
+              <div class="captcha-flex">
+                <div class="captcha-text" id="captcha-text"></div>
+                <div class="line"></div>
+              <input id="captcha-input" type="text" autocomplete="off" required>
+              <i class="fa-solid fa-rotate-right loadani"></i>
+              </div>
+            </div>
+            
+            <h4 class="error"></h4>
+          
+            <div class="input-box" id="login-btn">
+              <input type="submit" value="Login">
+            </div>
+          </form>
+          <hr>
+          <div class="box-forget" >
+              <a>Sign in with gov.mail.in ID</a>
+              <a>Forget Password?</a>
+          </div>
+    </div>
+
+    
+<footer>
+   <p>Designed & Developed by Centre for Railway Information Systems</p> 
+</footer>
+
+
+<script src="login.js"></script>
+</body>
+</html>

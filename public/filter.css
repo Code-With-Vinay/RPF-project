@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.filter-wrapper{
+    position: relative;
+    max-width: 800px;
+    height: auto;
+    width: 100%;
+    border-radius: 6px;
+    flex-direction: column;
+    padding: 0 30px 30px 30px;
+    top: 10%;
+    margin: 50px auto;
+    background-color: #fff;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+  }
+  
+  .filter-wrapper form{
+    position: relative;
+    margin-top: 16px;
+    /* min-height: 90px; */
+    background-color: #fff;
+    overflow: hidden;
+  }
+
+  .filter-wrapper .fields{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    margin: 4px 0;
+    width: 100%;
+    padding: 8px;
+  }
+  .filter-wrapper .fields .input-field{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 4px 0;
+  }
+  
+  .filter-wrapper .input-field label{
+    font-size: 14px;
+    font-weight: 600;
+    color: #2e2e2e;
+  }
+  
+
+    .filter-wrapper .input-field input, select{
+    outline: none;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    padding: 0 15px;
+    height: 42px;
+    margin: 8px 0;
+  }
+
+    .filter-wrapper .input-field  select{
+    width: 90%;
+    margin-left: 10px;
+  }
+  
+  .filter-wrapper form button{
+    height: 40px;
+    width: 50%;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 5px;
+    margin: 25px auto;
+    background-color: #4070f4;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  
+  .filter-wrapper form button:active{
+    transform: scale(0.5);
+  }
+
+
+.head{
+    margin: 14px auto;
+}
+@media (max-width: 585px){
+    .filter-wrapper{
+        max-width: 390px;
+    }
+}
